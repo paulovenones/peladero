@@ -8,23 +8,39 @@
   flex-direction: column;
 }
 
+.title {
+  max-width: 248px;
+  margin-bottom: 32px;
+  color: #EFEFEF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .homeButtons {
   display: flex;
   flex-direction: column;
+  font-size: 12px;
 }
 
-.homeButtons button {
+.homeButtons a {
   border: none;
-  border-radius: 8%;
+  border-radius: 8px;
   height: 56px;
   width: 248px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
 }
 
 .callToAction {
   background-color: #00D67C;
+  color: #EFEFEF;
 }
 
 .secondaryButton {
   background-color: #EFEFEF;
+  color: #00D67C;
+  margin-top: 16px;
 }
-
