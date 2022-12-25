@@ -1,5 +1,16 @@
+.formPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: var(--color-white);
+  width: calc(100% + 64px);
+  padding: 32px;
+  border-radius: 8px;
 }

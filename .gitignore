@@ -4,6 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+yarn.lock
+
+#firebase
+utils/db/serviceAccountKey.json
+.firebaserc
+firebase.json
 
 # testing
 /coverage

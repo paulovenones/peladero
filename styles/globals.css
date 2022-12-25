@@ -1,14 +1,16 @@
 :root {
-  --color-primary: #00D67C;
-  --color-background: #0073A4;
-  --color-white: #EFEFEF;
+  --color-primary: #00d67c;
+  --color-background: #0073a4;
+  --color-white: #efefef;
+  --color-grey: #495055;
+  --color-grey-light: #d9d9d9;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -28,4 +30,3 @@ body {
   height: 100vh;
   background-color: var(--color-background);
 }
-

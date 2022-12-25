@@ -1,7 +1,44 @@
-.textInput {
-  width: 100%;
-  outline: none;
+.inputBlock {
+  position: relative;
+}
+
+.inputBlock input {
+  font-weight: 500;
   font-size: 16px;
-  padding: 12px 16px;
-  border: 1px solid var(--color-primary);
+  color: var(--color-grey);
+  width: 100%;
+  padding: 15px 15px;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid var(--color-grey-light);
+}
+
+.placeholder {
+  position: absolute;
+  margin: 17px 0;
+  padding: 0 4px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  top: 0;
+  left: 17px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  background: none;
+  pointer-events: none;
+}
+
+.inputBlock input:valid + .placeholder,
+.inputBlock input:focus + .placeholder {
+  transform: scale(0.8) translateY(-40px) translateX(-6px);
+  width: 100%;
+  /* background: #fff; */
+}
+.inputBlock input:focus {
+  color: var(--color-background);
+  border-color: var(--color-background);
+}
+.inputBlock input:focus + .placeholder {
+  color: var(--color-background);
 }
